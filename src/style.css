@@ -1,0 +1,68 @@
+.frame {
+  border: 3px solid #58ae53;
+  margin: 40px auto;
+  width: 800px;
+  padding: 40px;
+  background-color: #e0c09709;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #2d242449;
+}
+.search-engine {
+  padding-bottom: 30px;
+}
+
+.current {
+  text-align: center;
+}
+.details {
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 30px;
+  border-left: 3px solid #57a8fb;
+}
+.forecast {
+  margin-top: 30px;
+  text-align: center;
+}
+.today {
+  color: #8ec351;
+}
+.more-details {
+  list-style-type: none;
+  color: #57a8fb;
+  padding-left: 0px;
+}
+.boxes {
+  background-color: #e0c09709;
+  border: 3px solid #ab47bc;
+}
+.boxes:hover {
+  border: 3px solid #5ac2f0;
+}
+.emoji {
+  font-size: 35px;
+}
+.card-text {
+  color: #55b4aa;
+}
+
+.signature {
+  text-align: center;
+  margin-top: 10px;
+  font-family: monospace;
+  color: #5a6275;
+}
+h1 {
+  color: #42a5f5;
+}
+h3 {
+  color: #f6b84a;
+}
+h5 {
+  color: #e94363;
+}
+
+a {
+  color: rgb(212, 83, 9);
+  text-decoration: none;
+}

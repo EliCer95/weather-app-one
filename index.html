@@ -1,19 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Plus Homework Week 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame">
+        <form id="search-form">
+          <div class="row search-engine">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Enter a city"
+                autocomplete="off"
+                class="form-control col-6 shadow-sm border-0"
+                id="search-form-input"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search 🔍"
+                class="form-control col-3 btn btn-primary shadow-sm border-0"
+                id="search-celsius"
+              />
+            </div>
+            <div class="col-3">
+              <button class="btn btn-success" id="current-location-button">
+                Current 📍
+              </button>
+            </div>
+          </div>
+        </form>
 
-</head>
-<body>
-    <h1>Hello Git</h1>
-    <form>
-        <input type="email" placeholder="enter your email"/>
-        <input type="submit" value="login"/>
-    </form>
-    <script src="script.js"></script>
-</body>
+        <div class="row">
+          <div class="col-6">
+            <h1 id="city"></h1>
+            <br />
+            <h3 class="today">Friday, 13/08/2021, 18:52</h3>
+          </div>
+          <div class="col-3 current">
+            <h1>☀️</h1>
+            <br />
+            <h3><strong id="degrees"></strong>°C</h3>
+          </div>
+          <div class="col-3 details">
+            <ul class="more-details">
+              <li>Precipitation: <span id="precipitation">x</span> %</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+              <li>Humidity: <span id="humidity"></span> %</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4 forecast">
+          <div class="col">
+            <div class="card boxes">
+              <div class="card-body">
+                <h5 class="card-title">Saturday</h5>
+                <p class="card-text">
+                  <span class="emoji">🌤</span><br /><strong>25°C</strong>/20°C
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card boxes">
+              <div class="card-body">
+                <h5 class="card-title">Sunday</h5>
+                <p class="card-text">
+                  <span class="emoji">☁️</span><br /><strong>20°C</strong>/15°C
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card boxes">
+              <div class="card-body">
+                <h5 class="card-title">Monday</h5>
+                <p class="card-text">
+                  <span class="emoji">⛅️</span><br /><strong>28°C/</strong>26°C
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card boxes">
+              <div class="card-body">
+                <h5 class="card-title">Tuesday</h5>
+                <p class="card-text">
+                  <span class="emoji">⛈</span><br /><strong>18°C</strong>/14°C
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="signature">Coded by Eliska Cerna</p>
+  </body>
+  <script src="src/script.js"></script>
 </html>
